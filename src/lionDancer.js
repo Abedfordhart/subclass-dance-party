@@ -12,24 +12,11 @@ makeLionDancer.prototype.constructor = makeLionDancer;
 
 makeLionDancer.prototype.step = function() {
     // call the old version of step at the beginning of any call to this new version of step
-    makeDancer.prototype.step.call(this)
+  makeDancer.prototype.step.call(this);
     // toggle() is a jQuery method to show/hide the <span> tag.
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
-    var left = this._originalLeft; 
+  var left = this._originalLeft; 
     // setTimeout(function(){this.$node.animate({left: '250px'})}, 1000);s
-    //setTimeout(this.setPosition.bind(this, this._originalTop, left-100), 1000);
-      
+    //setTimeout(this.setPosition.bind(this, this._originalTop, left-100), 1000);     
 };
-
-  //this.$node.effect("shake", { direction: }});
-  // call the old version of step at the beginning of any call to this new version of step
-  // makeDancer.prototype.step.call(this);
-  // this.step(); 
-  // this.setPosition(top, left+1);
-  // this.step(); 
-  // this.setPosition(top, left+1);
-  // this.step(); 
-  // this.setPosition(top, left-1);
-  // this.step(); 
-  // this.setPosition(top, left-1);

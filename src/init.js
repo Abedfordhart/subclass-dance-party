@@ -27,8 +27,15 @@ $(document).ready(function() {
       $("body").width() * Math.random(), // left
       Math.random() * 1000 // time between Steps 
     );
-    
+
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+  });
+
+  $('.lineUpButton').on('click', function(event) {
+    for(var i = 0; i < window.dancers.length; i++) {
+      
+    }
   });
 });
 

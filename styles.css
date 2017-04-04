@@ -1,6 +1,7 @@
 body, html{
   height:100%;
-  background-image: url('http://vignette3.wikia.nocookie.net/thelionkingfanon/images/5/50/Wiki-background/revision/20160207030218')
+  background-image: url('http://vignette3.wikia.nocookie.net/thelionkingfanon/images/5/50/Wiki-background/revision/20160207030218');
+  background-size: cover;
 }
 body{
   margin: 0px;
@@ -25,20 +26,29 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px; 
   position:absolute;
-
 }
-
 .lion-dancer {
   position:absolute;
   border: none;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background: url('https://www.mylionking.com/resources/site_images/animated_gif_000_simba_hakuna_matata.gif') no-repeat;
-  background-size: 80px 80px;
+  background-size: 100px 100px;
 }
-
-/*border:10px solid red;
-  border-radius:10px; 
-  background-image: url(http://www.nationalgeographic.com/content/dam/animals/pictures/mammals/a/african-lion/african-lion.ngsversion.1483462794161.JPG)
+.pumbaa-dancer {
   position:absolute;
-*/
+  border: none;
+  width: 100px;
+  height: 100px;
+  background: url('https://www.mylionking.com/resources/site_images/animated_gif_037_pumbaa_hakuna_matata.gif') no-repeat;
+  background-size: 100px 100px;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.lineUpButton{
+  padding:5px 12px;
+  float:left;
+}
