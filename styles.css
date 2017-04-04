@@ -22,6 +22,22 @@ body, a:link, a:visited, a:active{
 }
 .dancer{
   border:10px solid red;
-  border-radius:10px;
+  border-radius:10px; 
   position:absolute;
+
 }
+
+.lion-dancer {
+  position:absolute;
+  border: none;
+  width: 80px;
+  height: 80px;
+  background: url('https://www.mylionking.com/resources/site_images/animated_gif_000_simba_hakuna_matata.gif') no-repeat;
+  background-size: 80px 80px;
+}
+
+/*border:10px solid red;
+  border-radius:10px; 
+  background-image: url(http://www.nationalgeographic.com/content/dam/animals/pictures/mammals/a/african-lion/african-lion.ngsversion.1483462794161.JPG)
+  position:absolute;
+*/
