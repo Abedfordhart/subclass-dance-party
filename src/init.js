@@ -15,7 +15,6 @@ $(document).ready(function() {
      * A new object of the given type will be created and added
      * to the stage.
      */
-     //var context = this;
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
     // get the maker function for the kind of dancer we're supposed to make
@@ -30,12 +29,37 @@ $(document).ready(function() {
 
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
+    console.log(dancers)
   });
 
   $('.lineUpButton').on('click', function(event) {
-    for(var i = 0; i < window.dancers.length; i++) {
-      
+    // set a point on y-axis where all dancers are lining up to
+    // for each dancer:
+        // calculate the distance that the dancer needs to move
+        // call animate function, which is located in dancer superclass 
+    for (var i=0; i<window.dancers.length; i++){
+      window.dancers[i].lineUp();
+    }
+    // var linePos = 400;
+    // for(var i = 0; i < window.dancers.length; i++) {
+    //   var moveDistance = window.dancers[i]._originalTop - linePos;
+    //   window.dancers[i].lineUp(moveDistance);
+    // }
+  });
+
+  $('.danceButton').on('click', function(event) {
+    //iterate through dancer array
+      //call .dance on each item in array
+    for (var i = 0; i<window.dancers.length; i++) {
+     window.dancers[i].dance();
     }
   });
+
+  $('.danceBattle').on('click', function(event) {
+    for (var i = 0; i<window.dancers.length; i++) {
+      window.dancers[i].danceBattle();
+    }
+  });
+
 });
 

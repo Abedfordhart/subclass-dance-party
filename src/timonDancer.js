@@ -18,6 +18,5 @@ makePumbaaDancer.prototype.step = function() {
     // other effects you can use on a jQuery-wrapped html tag.
   var left = this._originalLeft; 
     // setTimeout(function(){this.$node.animate({left: '250px'})}, 1000);s
-    //setTimeout(this.setPosition.bind(this, this._originalTop, left-100), 1000);
-      
+    //setTimeout(this.setPosition.bind(this, this._originalTop, left-100), 1000);   
 };

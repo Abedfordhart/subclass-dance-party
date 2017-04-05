@@ -1,7 +1,5 @@
 var makePumbaaDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this._originalTop = top; 
-  this._originalLeft = left;
   this.$node.addClass('pumbaa-dancer');
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
@@ -17,6 +15,17 @@ makePumbaaDancer.prototype.step = function() {
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
   var left = this._originalLeft; 
-    // setTimeout(function(){this.$node.animate({left: '250px'})}, 1000);s
+    // setTimeout(function(){this.$node.animate({left: '250px'})}, 1000);
     //setTimeout(this.setPosition.bind(this, this._originalTop, left-100), 1000);    
+};
+
+makePumbaaDancer.prototype.dance = function() {
+  this.$node.animate({left: '+=50px'});
+  var context = this;
+  setTimeout(function(){context.$node.animate({left: '-=50px'})}, 750);
+
+};
+
+makePumbaaDancer.prototype.danceBattle = function() {
+  this.$node.animate({left: '750px'});
 };

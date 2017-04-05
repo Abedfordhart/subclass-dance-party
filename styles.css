@@ -6,7 +6,10 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 18px;
+
+
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -16,8 +19,8 @@ body, a:link, a:visited, a:active{
   float:right;
 }
 .topbar{
-  height:32px;
-  background-color: #555;
+  height:32px;  
+  /*background-color: #555;*/
 }
 .title{
   background-color: #777;
@@ -27,7 +30,7 @@ body, a:link, a:visited, a:active{
   border-radius:10px; 
   position:absolute;
 }
-.lion-dancer {
+.lion-dancer{
   position:absolute;
   border: none;
   width: 100px;
@@ -35,7 +38,7 @@ body, a:link, a:visited, a:active{
   background: url('https://www.mylionking.com/resources/site_images/animated_gif_000_simba_hakuna_matata.gif') no-repeat;
   background-size: 100px 100px;
 }
-.pumbaa-dancer {
+.pumbaa-dancer{
   position:absolute;
   border: none;
   width: 100px;
@@ -51,4 +54,20 @@ body, a:link, a:visited, a:active{
 .lineUpButton{
   padding:5px 12px;
   float:left;
+}
+
+.danceButton{
+  padding:5px 12px;
+  float:left;
+}
+.danceBattle{
+  padding:5px 12px;
+  float:left;
+}
+.flipped{
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
